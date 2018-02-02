@@ -20,7 +20,7 @@ namespace CollectionsLab
                 TotalCost += i;
             }
             Program.PrintCart();
-
+            Console.WriteLine();
             Console.WriteLine($"Your total is ${TotalCost} and the average item is ${Math.Round(TotalCost/ArrayLength, 3)}");
         }
 

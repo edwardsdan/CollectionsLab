@@ -73,6 +73,7 @@ namespace CollectionsLab
         
         public static bool Continue()
         {
+            Console.WriteLine();
             Console.WriteLine("Would you like to start another order? (y/n)");
             string x = Console.ReadLine().ToLower();
 

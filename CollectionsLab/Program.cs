@@ -23,14 +23,13 @@ namespace CollectionsLab
             while (true)
             {
                 Validate.ItemCheck(PrintMenu());
-
                 Calculate.AverageCost();
                 Calculate.LowestCost();
                 Calculate.HighestCost();
                 if (Validate.Continue() == false)
                     break;
             }
-
+            Console.WriteLine("Thank you for shopping at Walmart!");
         }
 
         private static void AddToMenu()
@@ -50,13 +49,14 @@ namespace CollectionsLab
             Console.WriteLine("Item\t\t\tPrice");
             Console.WriteLine(new string('=', 30));
             int FruitIndex = 1;
+
             foreach (KeyValuePair<Fruit, double> entry in ItemPrice)
             {
                 string ToPrint = string.Format("{0}: {1}\t\t{2:0.00}", FruitIndex, entry.Key, entry.Value);
                 Console.WriteLine(ToPrint);
                 FruitIndex++;
             }
-            Console.WriteLine();
+
             Console.WriteLine();
             Console.Write("Enter the number of what you want to order: ");
             string ToReturn = Console.ReadLine();
