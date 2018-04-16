@@ -50,7 +50,7 @@ namespace CollectionsLab
 
             foreach (KeyValuePair<Fruit, double> entry in ItemPrice)
             {
-                string ToPrint = string.Format("{0}: {1}\t\t{2:0.00}", FruitIndex, entry.Key, entry.Value);
+                string ToPrint = string.Format($"{FruitIndex}: {entry.Key}\t\t{entry.Value:0.00}");
                 Console.WriteLine(ToPrint);
                 FruitIndex++;
             }
@@ -71,7 +71,7 @@ namespace CollectionsLab
             int z = 0;
             foreach (Fruit i in CartItems)
             {
-                string ToPrint = string.Format("{0}: {1}\t\t{2:0.00}", (z+1), i, CartPrice[z]);
+                string ToPrint = string.Format($"{z+1}: {i}\t\t{CartPrice[z]:0.00}");
 
                 Console.WriteLine(ToPrint);
                 z++;
