@@ -8,8 +8,6 @@ using System.Text.RegularExpressions;
 
 namespace CollectionsLab
 {
-    public enum Fruit { watermelon = 1, apple, clementine, dragonfruit, banana, bellpepper, pomegranate, coconut };
-
     class Program
     {
         public static ArrayList CartItems = new ArrayList();
@@ -58,7 +56,7 @@ namespace CollectionsLab
             }
 
             Console.WriteLine();
-            Console.Write("Enter the number of what you want to order: ");
+            Console.Write("What do you want to order? (# or word) ");
             string ToReturn = Console.ReadLine();
             return Validate.TestEnumParse(ToReturn);
         }

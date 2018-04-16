@@ -10,7 +10,7 @@ namespace CollectionsLab
 {
     class Validate
     {
-        public static ArrayList Quantity = new ArrayList();
+        //public static ArrayList Quantity = new ArrayList();
 
         public static Fruit TestEnumParse (string temp)
         {
